@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+}
+
+.judul{
+    margin-bottom: 1em;
+}
+
+.weight{
+    margin-top: 1.8em;
+}
+.height{
+    margin-top: 1.8em;
+}
+
+.bmiform{
+    height: 100px;
+
+    width: 300px;
+    border: 1px solid rgb(155, 22, 22);
+}
+

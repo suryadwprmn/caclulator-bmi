@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<body>
+    <form action="" name="bmiForm">
+        <div class="bmi-calculator">
+            <h1 class="judul">Calculate your BMI</h1>
+            <div class="bmi-calculator-weight">
+                <input class="weight-slider" name="realweight" id="myWeight" type="range" min="25" max="100" value="60">
+
+                <p class="weight"> WEIGHT :
+                <input name="weight-real" id="inputWeight" type="number" value="60" min="25" max="180" oninput="showValWeight(this.value)">
+                <span id="weight"></span> kg
+                </p>
+            </div>
+            <div class="bmi-calculator-height">
+                <input class="height-slider" name="realheight" id="myHeight" type="range" min="110" max="220" value="160"/>
+                <p class="height">
+                    HEIGHT : 
+                    <input name="height-real" id="inputHeight" type="number" value="160" min="100" max="220" oninput="showValHeight(this.value)">
+                    <span id="height"></span> cm
+                </p>
+            </div>
+
+            <input type="button" class="btn" value="Calculate" onclick="calculateBMI()">
+
+            <p>
+                <strong> YOUR BMI</strong> 
+                <span id="yourbmi"> </span>
+            </p>
+            <p></p>
+            <p>
+                <span id="evaluationMessage"></span>
+            </p>
+        </div>
+    </form>
+  
+
+    <script src="js/script.js">
+
+    </script>
+</body>
+</html>
